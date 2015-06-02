@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>
+Loading
+</title>
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<script type="text/javascript">
+<!--
+function delayer(){
+    window.location = "http://pushnews.harp.io/"
+}
+//-->
+</script>
+<style type="text/css">
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+hr{
+	width: 80%;
+}
+
+</style>
+</head>
+<body  onLoad="setTimeout('delayer()', 5000)">
+	<center>
+    <br><br>
+	<h1> Loading </h1>
+	<br><br>
+<div id="id01"></div>
+             <script>
+             function myFunction(arr) {
+    var out = "";
+    var i;
+    for(i = 0; i<arr.length; i++) {
+        out += '<h2>' + arr[i].greeting + '</h2><br><h2>' + arr[i].date + '</h2><br><hr><h2>' + arr[i].quote + '</h2><hr><br><h2>' + arr[i].by + '</h2><br></br>';
+        
+        
+    }
+    document.getElementById("id01").innerHTML = out;
+}
+             </script>
+           </div>
+           </center>
+
+<script src="http://5wordsapp.pancakeapps.com/greeting.js"></script>
+</body>
+</html>
